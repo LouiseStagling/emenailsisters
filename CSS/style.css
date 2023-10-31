@@ -36,18 +36,17 @@ header {
   align-items: center;
   border-radius: 4px;
 
-
-
 }
 
 .navbox {
-  text-transform: lowercase;
+  display: flex;
+
 }
-
-
 
 nav {
   background-color:  #1b1a1a;
+  display: flex;
+  flex-direction: column;
 
  
 }
@@ -71,6 +70,37 @@ nav a:hover {
   background-color:#723672;
 }
 
+.serch {
+  text-align: right;
+}
+
+.serch form {
+  display: flex;
+}
+
+.serch input[type="text"] {
+  margin-right: 10px;
+  width: 300px;
+  padding: 10px
+
+}
+
+.serch input[type="submit"] {
+  background-color: #723672;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 20px ;
+
+}
+
+.serch input[type="submit"]:hover {
+  background-color: black;
+
+}
+
+
+
 /* Header responsiv  */
 @media screen and (max-width: 768px) {
   .logo {
@@ -91,33 +121,8 @@ nav a:hover {
  
 }
  /* sökruta stilar  */
-.serch {
-  text-align: right;
-}
 
-.serch form {
-  display: flex;
-}
 
-.serch input[type="text"] {
-  margin-right: 10px;
-  width: 600px;
-  padding: 10px
-
-}
-
-.serch input[type="submit"] {
-  background-color: #723672;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-
-}
-
-.serch input[type="submit"]:hover {
-  background-color: black;
-
-}
  
 /* Bildspel */
 
