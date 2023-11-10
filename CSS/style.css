@@ -163,7 +163,6 @@ img {
   padding: 0 ;
   margin: 0;
   margin-top: 0;
-  border:solid greenyellow 1px
 }
 
 .Erbjuder-rubrik {
@@ -420,6 +419,21 @@ p {
 }
 
 
+.book-now-btn {
+  margin-top: auto; 
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #524650; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.book-now-btn:hover {
+  background-color: #272525;
+}
 
 
 /* kontakt-formulär */
@@ -609,6 +623,9 @@ transition: 0.5s linear;
 .faq-answer {
   display: none;
 }
+
+
+
 
 
 /* Om 0ss */
