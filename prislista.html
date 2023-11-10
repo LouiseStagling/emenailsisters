@@ -20,33 +20,157 @@
 </head>
 <body>
 
-    <div class="ram"> 
+  <header>
+    <div class="header-container">
+    <div class="logo"><a href="index.html"><img src="/BILDER/eme-logo.png"> </a></div>
+    <div class="nav-serch-container">
+    <div class="navbox">
+      <nav class="nav"> 
+        <ul id="meny"></ul>
+       </nav>
+       
+    </div>
+    <div class="serch"> <form action="/sok.php" method="GET">
+      <input type="text" name="query" placeholder="Vad letar du efter?">
+      <input type="submit" value="Sök">
     
     
-        <nav class="nav1">
-          <ul>
-            <li><a href="index.html">Start </a></li>
-            <li><a href="omoss.html">Om oss</a></li>
-            <li><a href="prislista.html">prislista </a></li>
-            <li><a href="inspo.html">Inspo</a></li>
-            <li><a href="kontakt.html"> Kontakt </a></li>
-            <li><a href="boka.html"> Boka</a></li>
-            </ul>
-        </ul>
-        </nav>
+    </form></div>
+    </div>
+    </div>
+     </header>
+
+     <main class="price-list-topp-picture-container">
+      <div class="image-topp-pricelist">
+        <img src="/BILDER/nagelteraput.jpg" alt="Vår salong">
       </div>
-        
-        
-        
-        
-        
-        <script src="JAVASCRIPT/Bildspel.js"></script>
-        
-        
-        <h1>Prislista</h1>
+    </main>
+
+
+     <aside> 
+      <div class="page-intro-text">
+
+      <h1> Prislista</h1>
+<p> Visste du att en nagelsalong kan erbjuda mer än bara manikyr och pedikyr? <br> Utforska vår 
+  prislista för en rad olika behandlingar, inklusive fotvård, fotmassage, och <br> 
+  nagelförlängningar i gel eller akryl. Upptäck de perfekta sätten att skämma bort 
+  dig själv och <br> hålla dina naglar och fötter i toppskick. </p>
+</div>
+</aside>
+
+<section>
+        <div class="price-list-container">
+<div class="price-list-tabel-conatiner">
+
+  <table class="table-price-list">
+    <tr>
+      <th>Behandling</th>
+      <th>Varaktighet</th>
+      <th>Pris (SEK)</th>
+    </tr>
+    <tr>
+      <td>Manikyr</td>
+      <td>30 minuter</td>
+      <td>300 kr</td>
+    </tr>
+    <tr>
+      <td>Pedikyr</td>
+      <td>45 minuter</td>
+      <td>400 kr</td>
+    </tr>
+    <tr>
+      <td>Manikyr & Pedikyr</td>
+      <td>75 minuter</td>
+      <td>650 kr</td>
+    </tr>
+    <tr>
+      <td>Shellac Manikyr</td>
+      <td>45 minuter</td>
+      <td>350 kr</td>
+    </tr>
+    <tr>
+      <td>Shellac Pedikyr</td>
+      <td>60 minuter</td>
+      <td>450 kr</td>
+    </tr>
+    <tr>
+      <td>Shellac Manikyr & Pedikyr</td>
+      <td>90 minuter</td>
+      <td>750 kr</td>
+    </tr>
+    <tr>
+      <td>Fotmassage</td>
+      <td>30 minuter</td>
+      <td>250 kr</td>
+    </tr>
+    <tr>
+      <td>Fotspa (inkl. Pedikyr)</td>
+      <td>60 minuter</td>
+      <td>550 kr</td>
+    </tr>
+    <tr>
+      <td>Fot- och Manikyrpaket</td>
+      <td>120 minuter</td>
+      <td>1000 kr</td>
+    </tr>
+    <tr>
+      <td>Nagelförlängning (Gel)</td>
+      <td>Varierar</td>
+      <td>Från 600 kr</td>
+    </tr>
+    <tr>
+      <td>Nagelförlängning (Akryl)</td>
+      <td>Varierar</td>
+      <td>Från 550 kr</td>
+    </tr>
+  </table>
+</div>
+
+        </div>
     
-        
+      </section>
+
+
+
     
-        
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer">
+            <div class="footer-heading footer-1 ">
+              <h2>Om oss</h2>
+              <a href="#"> Recentioner</a>
+              <a href="#"> Erbjudanden</a>
+              <a href="#"> Produkter</a>
+              <a href="#"> Blogg</a>
+            </div>
+    
+            <div class="footer-heading footer-2">
+              <h2>Kontakt</h2>
+              <a href="#"> Hitta hit</a>
+              <a href="#"> Frågor och svar</a>
+              <a href="#"> Telefon</a>
+              <a href="#"> Mail</a>
+            </div>
+    
+            <div class="footer-heading footer-3">
+              <h2>Sociala medier</h2>
+              <a href="#"> Instagram</a>
+              <a href="#"> Facebook</a>
+              <a href="#"> LinkedIn</a>
+            </div>
+    
+            <div class="footer-email-form">
+              <h2>Vårt nyhetsbrev</h2>
+              <input type="email" placeholder="Skriv din mailadress" id="footer-email">
+              <input type="submit" value="Prenumerera" id="footer-email-btn">
+            </div>
+          </div>
+        </div>
+    
+    
+      </footer>
+      
+      <script src="JAVASCRIPT/menu.js"></script>
 </body>
 </html>

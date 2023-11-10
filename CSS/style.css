@@ -1,33 +1,38 @@
 
-body {
+ body { 
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  height: 100%;
+  
+  
  }
 
  /* header */
 
 header {
   display: flex;
-  background-color: #1b1a1a;
+  height: 50vh;
 }
  .header-container {
   display: flex;
   justify-content:center;
+  background-color: #1b1a1a ;
   flex-direction:column;
-  background-color: #1b1a1a;
   padding: 20px;
-  height: 50vh;
-  width:100%
+  height: auto;
+  width: 100%;
 }
 
 .logo {
   max-width: 100%;
-  height: 50px;
+  height: auto;
   display:flex;
   align-items: center;
   margin:0 auto;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
   margin-top: 4rem;
+
+   /* sökruta  */
 }
 
 .nav-serch-container {
@@ -35,16 +40,18 @@ header {
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
+  background-color: #1b1a1a;
+  height: 4rem;
+  margin-bottom: 2rem;
 
 }
 
 .navbox {
   display: flex;
-
 }
 
 nav {
-  background-color:  #1b1a1a;
+  background-color:#1b1a1a;
   display: flex;
   flex-direction: column;
 
@@ -67,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color:#723672;
+  background-color:#272525;
 }
 
 .serch {
@@ -80,98 +87,142 @@ nav a:hover {
 
 .serch input[type="text"] {
   margin-right: 10px;
-  width: 300px;
-  padding: 10px
+  width: 500px;
+  padding: 10px;
+  border-radius: 1rem;
 
 }
 
 .serch input[type="submit"] {
-  background-color: #723672;
+  background-color: #524650;
   border: none;
   color: white;
   padding: 10px 20px;
-  margin-right: 20px ;
+  margin-right: 20px;
+  border-radius: 1rem;
+
 
 }
 
 .serch input[type="submit"]:hover {
-  background-color: black;
+  background-color: #272525
 
 }
-
-
 
 /* Header responsiv  */
-@media screen and (max-width: 768px) {
-  .logo {
-    text-align: center;
+@media (max-width: 768px) {
+  .header-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
   }
   .nav-serch-container {
-    flex-direction: column;
+  flex-direction: column;
+
+    
   }
+  .header {
+    height: auto ;
+  }
+
+  .nav a {
+    padding: 10px;
+  }
+  .logo {
+    display: none ;
+  }
+.nav {
+  margin-bottom: 4rem;
 }
-
-/* Meny responsiv  */
-
-@media screen and (min-width: 768px) {
-{
-  display: flex;
 }
- 
- 
-}
- /* sökruta stilar  */
-
-
  
 /* Bildspel */
 
 .slideshow-box {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
-  overflow: hidden;
+  position: relative;
+  margin-bottom: 0;
+  border:solid orange 1px
 }
 
 .slideshow-container {
   max-width: 100%;
   max-height: 600px;
   position: relative;
-
   margin: 0;
   padding: 0;
+  margin-bottom: 0;
+  border:solid blueviolet 1px
 }
 
 .mySlides {
   display: none;
+  position: relative;
+  margin-bottom: 0;
+  display: none;
+  border: solid green 1px;
 }
 
 img {
   width: 100%;
-  height: auto;
+  height: 800px;
+  object-fit: cover;
+  border:solid purple 1px;
 }
 
+/* bläddringspilar */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1; 
+}
+
+.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 10px;
+  transform: translateY(-50%);
+   }
+
 /* Vi erbjuder */
+
 .content-container {
   display: flex;
   padding: 0 ;
   margin: 0;
+  margin-top: 0;
+  border:solid greenyellow 1px
 }
 
-.Erbjuder-rubrik
-{
+.Erbjuder-rubrik {
+  flex: 1;
+  position: relative;
+  margin-top: 0;
+}
+
+.Erbjuder-rubrik video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.erbjuder-text {
   flex: 1;
   padding: 20px;
-  background-image: url('/BILDER/nagelteraput.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
- 
-}
-.erbjuder-text {
-  flex: 2 ;
-  background-color:#333333;
-  color: white;
-  margin: 0;
- 
+  background-color:#b1b1b1;
+  color: black;
 }
 .erbjuder-text h2 {
   text-align: left;
@@ -187,7 +238,10 @@ img {
   margin-left: 4rem;
   margin-bottom: 4rem;
 }
+
+
 /* Footer stilar */
+
 * {
 padding:0;
 margin:0;
@@ -232,7 +286,7 @@ display: flex;
 justify-content: left;
 }
 .footer-heading a:hover {
-    color:rgb(114, 54, 114);
+    color:#524650;;
     transition: 0.3s ease-out;
      }
 
@@ -264,7 +318,7 @@ justify-content: left;
         width: 150px;
         height: 40px;
         border-radius: 4px;
-        background-color:rgb(114, 54, 114);
+        background-color:#524650;
         outline: none;
         border: none;
         color: white;
@@ -275,3 +329,417 @@ justify-content: left;
         background-color:black;
         transition: all 0.4s ease-out;
     }
+
+    /* Introtexter */
+
+    .page-intro-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #b1b1b1;
+      padding:20px;
+      margin-bottom: 5px;
+    }
+    
+    .page-intro-text h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    .page-intro-text p {
+      text-align: center;
+      margin: 10px;
+      margin-bottom: 20px;
+    }
+
+/* Om oss */
+
+
+.container-about-us {
+  display: flex;
+}
+
+.container-about-us-img {
+  flex: 1;
+}
+
+.img-about-us {
+  width: 100%;
+  height: 100%;
+}
+
+.container-about-us-content {
+  flex: 1; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.container-about-us-content h1 {
+  margin: 0;
+}
+
+.container-about-us-content p {
+  margin: 0;
+}
+
+
+
+
+
+/* Kontakta oss */
+
+
+.container-about-us {
+  display: flex;
+}
+
+.container-about-us-img {
+  flex: 1;
+}
+
+.img-about-us {
+  width: 100%;
+  height: 100%;
+}
+
+.container-about-us-content {
+  flex: 1; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Kontaktuppgifter*/
+.team {
+  background-color:#b1b1b1;
+ margin-bottom: 0;
+ margin-top: 0;
+}
+
+.container-team {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.person {
+  flex: 0 0 25%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.person-image {
+  text-align: center;
+}
+
+.person-image img {
+  max-width: 100%;
+}
+
+.person-text {
+  text-align: center;
+  padding: 10px; 
+}
+
+
+
+
+/* kontakt-formulär */
+
+.contact-us {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.contact-us {
+  background-color: #cecccc;
+}
+.container-contact-us {
+  width: 80%;
+  padding: 20px;
+  background-color:#cecccc;
+
+}
+
+.container-contact-us h2 {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.wrapper-contact-us {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  gap: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.wrapper-box-contact-us {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.wrapper-box-contact-us input {
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  transition: 0.5s linear;
+
+}
+
+.wrapper-box-contact-us input:focus,
+.wrapper-box-contact-us input:valid {
+  padding: 20px 10px;
+  background:whitesmoke;
+  margin-top: 10px ;
+
+}
+.wrapper-box-contact-us label {
+position: absolute;
+top: 0;
+left: 0;
+color: black;
+font-size: larger 18px;
+font-weight: bold;
+padding: 20px;
+transition: 0.5s linear;
+
+}
+.wrapper-box-contact-us input:focus ~ label,
+.wrapper-box-contact-us input:valid ~ label {
+  padding:0;
+
+}
+
+.wrapper-box-contact-us textarea {
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  transition: 0.5s linear;
+
+}
+
+.wrapper-box-contact-us textarea:focus,
+.wrapper-box-contact-us textarea:valid {
+  padding: 20px 10px;
+  background: whitesmoke;
+  margin-top: 10px;
+   }
+
+.wrapper-box-contact-us textarea:focus ~ label,
+.wrapper-box-contact-us textarea:valid ~ label {
+  padding:0;
+
+}
+
+#button-contact-us {
+  background:#1b1a1a;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* kontakt-telefon och adress */
+
+.container-contact-info {
+  text-align: center;
+  background-color: #cecccc;
+  margin-top: 0;
+  padding: 20px 0;
+ 
+}
+.contact-info-number-email {
+ 
+  margin-bottom: 0;
+ 
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 0;
+ 
+}
+
+.map {
+  height: 40vh;
+  margin-top: 20px;
+}
+
+/* frågor och svar */
+
+.faq {
+  background-color: #b1b1b1;
+  margin: 5px 0;
+  padding: 20px;
+ 
+}
+
+.faq h2 {
+  margin: 0;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0; 
+}
+
+.faq-box {
+  background-color: #b1b1b1;
+  padding: 20px;
+  margin-bottom: -2px;
+  margin-top: 20px;
+  border: 2px solid white; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.faq-box:hover {
+  background-color: #272525;
+  color: white;
+}
+
+.faq-question {
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+}
+
+
+/* Om 0ss */
+.container-about-us {
+  display: flex;
+}
+
+.container-about-us-img {
+  flex: 1;
+
+}
+
+.img-about-us {
+  width: 100%;
+  height: 100%;
+}
+
+.container-about-us-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid white 2px;
+  background-color: #b1b1b1;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ /* Prislista */
+
+
+ .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image-topp-pricelist {
+  position: relative;
+}
+
+.image-topp-pricelist img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+ /* Tabell-Prislista */
+
+ .price-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.table-price-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  height: 100%;
+}
+
+.table-price-list th, .table-price-list td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table-price-list th {
+  background-color: #333;
+  color: white;
+}
+
+.table-price-list tr:nth-child(even) {
+  background-color: #cecccc;
+}
+
+.table-price-list tr:nth-child(odd) {
+  background-color: #b1b1b1;
+}
+
+.table-price-list tr td {
+  border: 1px solid white;
+}
+

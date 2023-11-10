@@ -20,35 +20,203 @@
 </head>
 <body onload="startBildspel()" leftmargin="0" 
 topmargin="0" marginwidth="0" marginheight="0">
-    <script src="JAVASCRIPT/Bildspel.js"></script>
     
-    <div class="ram"> 
-    
-    
-        <nav class="nav1">
-          <ul>
-            <li><a href="index.html">Start </a></li>
-            <li><a href="omoss.html">Om oss</a></li>
-            <li><a href="prislista.html">prislista </a></li>
-            <li><a href="inspo.html">Inspo</a></li>
-            <li><a href="kontakt.html"> Kontakt </a></li>
-            <li><a href="boka.html"> Boka</a></li>
-            </ul>
-        </ul>
-        </nav>
+    <header>
+      <div class="header-container">
+      <div class="logo"><a href="index.html"><img src="/BILDER/eme-logo.png"> </a></div>
+      <div class="nav-serch-container">
+      <div class="navbox">
+        <nav class="nav"> 
+          <ul id="meny"></ul>
+         </nav>
+         
+      </div>
+      <div class="serch"> <form action="/sok.php" method="GET">
+        <input type="text" name="query" placeholder="Vad letar du efter?">
+        <input type="submit" value="Sök">
+      
+      
+      </form></div>
+      </div>
+      </div>
+       </header>
+      
+       <main class="contact-us-main"> 
+        <div class="page-intro-text">
+
+        <h1> Kontakta oss</h1>
+ <p> Kundnöjdhet är vår främsta prioritet. Vi välkomnar ditt samtal eller meddelande. <br>
+   Tveka inte att höra av dig om du har några frågor, önskemål eller vill boka en tid. <br>
+   Vi finns här för att hjälpa dig att se och känna dig fantastisk. </p>
+  </div>
+
+  <div class="book-now">
+    <a href="#" class="book-button">Boka nu</a>
+  </div>¨
+ </main>
+
+      <section class="team">
+
+        <div class="container-team">
+          <div class="person">
+            <div class="person-image">
+              <img src="/BILDER/linda_berg_eme.jpg" alt="Linda Berg">
+            </div>
+            <div class="person-text">
+              <p><h3>Linda Berg <br> Nagelteraput </h3></p>
+              <p>Linda är en erfaren nagelterapeut med en passion för kreativ nagelkonst. 
+                Hennes hängivenhet att skapa utsökta naglar är enastående. Linda utmärker sig i 
+                att skapa unika och stilfulla nageldesigns som matchar din personliga smak.</p>
+            
+            </div>
+          </div>
+          <div class="person">
+            <div class="person-image">
+              <img src="/BILDER/caroline_johansson_eme.jpg" alt="Caroline Johansson">
+            </div>
+            <div class="person-text">
+              <p><h3>Caroline Johansson <br>Nagelteraput</p> </h3>
+              <p>Caroline är en perfektionist när det kommer till nagelvård. Hennes 
+                noggrannhet och uppmärksamhet på detaljer säkerställer att varje manikyr och 
+                pedikyr hon utför är felfri. Välj Caroline för den ultimata nagelvården och 
+                eleganta naglar.</p>
+              
+            </div>
+          
+          </div>
+          <div class="person">
+            <div class="person-image">
+              <img src="/BILDER/aijanna_murtaj_eme.jpg" alt="Arianna Murtaj">
+            </div>
+            <div class="person-text">
+              <p><h3>Arijana Murtaj<br> CEO / Grundare </h3></p>
+              <p>Arijana är VD för vår nagelsalong. Hennes ledarskap och hängivenhet 
+                till kundnöjdhet skapar en välkomnande atmosfär för både kunder och personal. 
+                Med Arijana vid rodret kan du förvänta dig den högsta servicenivån och 
+                professionalism.</p>
+              
+            </div>
+          </div>
+          <div class="person">
+            <div class="person-image">
+              <img src="/BILDER/elvira_lundin_eme.jpg" alt="Elvira Lundin">
+            </div>
+            <div class="person-text">
+              <p><h3>Elvira Lundin <br>Pedikyrexpert </h3></p>
+              <p> Elvira är vår pedikyrekspert. Med sin skicklighet och passion för fotvård ser 
+                hon till att dina fötter inte bara ser vackra ut utan också känns uppfriskade. 
+                Upplev avslappning och gå därifrån med friska och fantastiska fötter, tack vare 
+                Elviras expertis.</p>
+            
+            </div>
+          </div>
+        </div>
+      
+       </section>   
+      
+
+
+    <section class="contact-us">
+<div class="container-contact-us">
+<h2>Kontakt</h2>
+<form> 
+  <div class="wrapper-contact-us">
+    <div class="wrapper-box-contact-us">
+      <input type="text" name="fname" id="fname" required>
+      <label for="fname">Förnamn</label>
+    </div>
+    <div class="wrapper-box-contact-us">
+      <input type="text" name="lname" id="lname" required>
+      <label for="lname">Efternamn</label>
+    </div>
+  </div>
+  
+  <div class="wrapper-contact-us">
+    <div class="wrapper-box-contact-us">
+      <input type="email" name="mail" id="email" required>
+      <label for="email">E-post </label>
+    </div>
+    <div class="wrapper-box-contact-us">
+      <input type="number" name="tel" id="tel" required>
+      <label for="tel">Telefonnummer</label>
+    </div>
+  </div>
+  
+  <div class="wrapper-contact-us">
+    <div class="wrapper-box-contact-us">
+      <textarea id="mes" required></textarea>
+      <label for="mes">Skriv ditt meddelande här </label>
+    </div>
+  </div>
+  <input type="submit" name="" value="Skicka" id="button-contact-us">
+</form>
+</div>
+</section>
+<section class="faq">
+  <h2> Frågor och svar</h2>
+<div class="faq-container" id="faq-container"></div>
+ 
+</section>
+
+<section>
+
+  <div class="container-contact-info">
+    <div class="contact-info-number-email">
+      <h2>Telefon och mail</h2>
+      <p>Telefon: 123-456-7890</p>
+      <p>E-post: info@salongen.com</p>
+    </div>
+    <div class="location-info">
+      <h2>Hitta hit</h2>
+      <p>Salongens gata 123</p>
+      <p>Postnummer, Stad</p>
+      
+      <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.845013578297!2d17.75557411634303!3d59.48721867303889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9bf2c4c03d67%3A0xa6d014f8b44cd409!2sMullb%C3%A4rsstigen%2033%2C%20196%2031%20Kungs%C3%A4ngen!5e0!3m2!1sen!2sse!4v1660381225517!5m2!1sen!2sse" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-heading footer-1 ">
+        <h2>Om oss</h2>
+        <a href="#"> Recentioner</a>
+        <a href="#"> Erbjudanden</a>
+        <a href="#"> Produkter</a>
+        <a href="#"> Blogg</a>
       </div>
 
+      <div class="footer-heading footer-2">
+        <h2>Kontakt</h2>
+        <a href="#"> Hitta hit</a>
+        <a href="#"> Frågor och svar</a>
+        <a href="#"> Telefon</a>
+        <a href="#"> Mail</a>
+      </div>
+
+      <div class="footer-heading footer-3">
+        <h2>Sociala medier</h2>
+        <a href="#"> Instagram</a>
+        <a href="#"> Facebook</a>
+        <a href="#"> LinkedIn</a>
+      </div>
+
+      <div class="footer-email-form">
+        <h2>Vårt nyhetsbrev</h2>
+        <input type="email" placeholder="Skriv din mailadress" id="footer-email">
+        <input type="submit" value="Prenumerera" id="footer-email-btn">
+      </div>
+    </div>
+  </div>
 
 
-
-
-<script src="JAVASCRIPT/Bildspel.js"></script>
-
-
-    
-        <h1>Kontakt</h1>
-        
-    
+</footer>
+     
+<script src="JAVASCRIPT/menu.js"></script>
+<script src="JAVASCRIPT/fargorsvar.js"></script>
         
     
         

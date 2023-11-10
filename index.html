@@ -24,71 +24,72 @@
 
 <body>
  
- <header>
-<div class="header-container">
-<div class="logo"><a href="index.html"><img src="/BILDER/EME-logo.png"> </a></div>
-<div class="nav-serch-container">
-<div class="navbox">
-  <nav class="nav"> 
-    <ul>
-    <li><a href="index.html">Start </a></li>
-    <li><a href="omoss.html">Om oss</a></li>
-    <li><a href="prislista.html">Prislista </a></li>
-    <li><a href="inspo.html">Inspo</a></li>
-    <li><a href="kontakt.html"> Kontakt </a></li>
-    <li><a href="boka.html"> Boka</a></li>
-    </ul>
-  </ul>
-   </nav>
-</div>
-<div class="serch"> <form action="/sok.php" method="GET">
-  <input type="text" name="query" placeholder="Vad letar du efter?">
-  <input type="submit" value="Sök">
-
-
-</form></div>
-</div>
-</div>
- </header>
- 
-<main>
-      <div class="slideshow-box">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="BILDER/Erbjudande-bild1.png">
-          </div>
-          <div class="mySlides fade">
-            <img src="BILDER/Erbjudande-bild2.png">
-          </div>
-          <div class="mySlides fade">
-            <img src="BILDER/Erbjudande-bild3.png">
-          </div>
-          <div class="mySlides fade">
-            <img src="BILDER/Erbjudande-bild4.png">
-          </div>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html"><img src="/BILDER/eme-logo.png" alt="Logo"></a>
+      </div>
+      <div class="nav-serch-container">
+        <div class="navbox">
+          <nav class="nav">
+            <ul id="meny"></ul>
+          </nav>
+        </div>
+        <div class="serch">
+          <form action="/sok.php" method="GET">
+            <input type="text" name="query" placeholder="Vad letar du efter?">
+            <input type="submit" value="Sök">
+          </form>
         </div>
       </div>
-        </main>
+    </div>
+  </header>
  
+ <main>
+  <div class="slideshow-box">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="BILDER/Erbjudande-bild1.png" alt="Halloween erbjudande">
+      </div>
+      <div class="mySlides fade">
+        <img src="BILDER/Erbjudande-bild2.png" alt="Julerbjudande">
+      </div>
+      <div class="mySlides fade">
+        <img src="BILDER/Erbjudande-bild3.png" alt="Festerbjudande">
+      </div>
+      <div class="mySlides fade">
+        <img src="BILDER/Erbjudande-bild4.png" alt="Bröllopserbjudande">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+  </div>
+</main>
+        
+       
         <div class="content-container">
+          
           <div class="Erbjuder-rubrik">
+            <video autoplay loop muted>
+              <source src="/VIDEO/naglarinspo.mp4" type="video/mp4">
+            </video>
             
           </div>
           <div class="erbjuder-text">
 
             <h2>Vi erbjuder</h2>
             <p class="EME"> EME NAIL SISTERS är salongen där du får vänta lite längre på dina 
-              nagelkonstverk,<br> men där du betalar ett mycket billigare pris. Med min färska utbildning 
+              nagelkonstverk, men där du betalar ett mycket billigare pris. Med min färska utbildning 
               och kreativa talang, skapar jag unika nageldesigner som speglar din personlighet och som är
-             väda att vänta på. <br> <br> Hos mig är du och dina önskemål alltid i fokus. Tar det lite längre tid 
-             kan du både få påfyllning av kaffe och en kaka om du vill ha det. Självklart finns också 
-             nyttiga snacks. <br>Jag använder enbart högkvalitativa produkter och skapar en avslappnad 
-             atmosfär för att du <br>ska kunna njuta av din behandling till fullo. Boka din tid idag!
+             väda att vänta på. Hos mig är du och dina önskemål alltid i fokus. Tar det lite 
+             längre tid kan du både få påfyllning av kaffe och en kaka om du vill ha det. Självklart 
+             finns också nyttiga snacks. Jag använder enbart högkvalitativa produkter och skapar en
+             avslappnad atmosfär för att du ska kunna njuta av din behandling till fullo.
+            Boka din tid idag!
                 </p>
           </div>
         </div>
-    
-      </main>
   
     <footer>
     <div class="footer-container">
@@ -127,9 +128,9 @@
 
   </footer>
  
-       
+  <script src="JAVASCRIPT/menu.js"></script>
         
-          <script src="JAVASCRIPT/Bildspel.js"></script>
+          <script src="JAVASCRIPT/script.js"></script>
            
 </body>
 </html>
