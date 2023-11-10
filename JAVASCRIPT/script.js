@@ -1,38 +1,19 @@
-let slideIndex = 0;
-let currentSlide = 0;
+var slideIndex = 0;
+showSlides();
 
-showSlides(currentSlide);
-
-function showSlides(n) {
-  let i;
-  const slides = document.getElementsByClassName("mySlides");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  currentSlide = n;
-
-  if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
-
-  slides[currentSlide].style.display = "block";
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 4000); // Byt bild var 4 sekund
 }
-
-function plusSlides(n) {
-  currentSlide += n;
-  showSlides(currentSlide);
-}
-
-// Automatiskt bildbyte var 4 sekunder
-setInterval(function () {
-  plusSlides(1);
-}, 4000);
-
 
 
 
