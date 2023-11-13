@@ -338,9 +338,22 @@ justify-content: left;
         }
 
         .footer-email-form h2 {
-          text-align: left;
-          margin-left: 2rem;
+          text-align: center;
 
+        }
+
+        .footer-email-form {
+          text-align: center;
+        }
+      
+        .footer-email-form h2 {
+          text-align: center;
+        }
+      
+        .footer-email-form input[type="email"],
+        .footer-email-form input[type="submit"] {
+          width: 100%;
+          margin: 0;
         }
       }
     /* Introtexter */
