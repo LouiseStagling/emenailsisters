@@ -251,7 +251,7 @@ img {
 
 /* Footer stilar */
 
-* {
+.footer {
 padding:0;
 margin:0;
 box-sizing: border-box;
@@ -455,6 +455,7 @@ p {
   background-color: #b1b1b1;
   padding:20px;
   margin-bottom: 0px;
+
 }
 
 .page-intro-text-contact-us h1 {
@@ -740,6 +741,13 @@ transition: 0.5s linear;
   .container-contact-info .contact-info-number-email,
   .container-contact-info .location-info {
     margin: 20px 0; 
+  }
+
+   
+    .page-intro-text {
+      font-size: 16px;
+      padding: 10px;
+    
   }
 }
 
