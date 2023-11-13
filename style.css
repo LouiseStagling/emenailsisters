@@ -4,8 +4,11 @@
   margin: 0;
   height: 100%;
   
-  
  }
+ h1 {
+  font-size: 24px; 
+}
+
 
  /* header */
 
@@ -70,10 +73,12 @@ nav a {
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
+  font-size: 17px;
 }
 
 nav a:hover {
   background-color: #272525;
+  font-size: 17px;
 
 }
 
@@ -390,6 +395,7 @@ justify-content: left;
       margin: 10px;
       margin-bottom: 0;
       margin-top: 0;
+      font-size: 16px;
     }
 
     /* Om 0ss */
@@ -529,6 +535,9 @@ button:hover {
   box-sizing: border-box;
 }
 
+.team h2 {
+  font-size: 16px; 
+}
 .person-image {
   text-align: center;
 }
@@ -568,9 +577,9 @@ button:hover {
 
 .container-contact-us h2 {
   color: black;
-  font-size: 3rem;
   text-align: center;
   margin-bottom: 30px;
+  font-size: 2rem;
 
 }
 
