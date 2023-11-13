@@ -59,6 +59,7 @@ nav ul {
   padding: 0;
   display: flex;
  
+ 
 }
 
 nav a {
@@ -106,7 +107,7 @@ nav a:hover {
 /* Header responsiv  */
 @media (max-width: 768px) {
   header {
-    height: 70vh;
+    height: auto;
   }
   
   .header-container {
@@ -118,12 +119,18 @@ nav a:hover {
   .nav-serch-container {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
 
   nav {
     margin: 0;
   }
-
+nav ul {
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
   nav a {
     padding: 10px;
   }
@@ -345,9 +352,6 @@ justify-content: left;
 
         }
 
-        .footer-email-form {
-          text-align: center;
-        }
       
         .footer-email-form h2 {
           text-align: center;
