@@ -12,6 +12,7 @@
 header {
   display: flex;
   height: 50vh;
+
 }
  .header-container {
   display: flex;
@@ -21,6 +22,7 @@ header {
   padding: 20px;
   height: auto;
   width: 100%;
+  z-index: 2;
 }
 
 .logo {
@@ -108,30 +110,55 @@ nav a:hover {
 
 /* Header responsiv  */
 @media (max-width: 768px) {
-  .header {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .nav-serch-container {
-    flex-direction: column;
-  }
-
-  .nav a {
-    padding: 10px;
-  }
-
-  .logo {
-    display: flex;
-  }
-
-  .nav {
-    margin-bottom: 4rem;
-  }
-}
  
+  .header-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+   
+  header {
+    flex-direction: column;
+    align-items: center; 
+    height: auto;
+  }
+.nav-serch-container {
+  flex-direction: column;
+  align-items: center;
+  width: auto
+}
+
+nav {
+  width: 100%; 
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+nav a {
+  padding: 10px;
+  text-align: center;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+.search-container {
+  padding: 10px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto
+}
+
+.serch input[type="text"] {
+  width: 100%; 
+  margin-right: 0; 
+}
+
+
+
+}
+
+
 /* Bildspel */
 
 #slideshow-container {
@@ -199,45 +226,28 @@ img {
   margin-bottom: 2rem; 
 }
 
-/* Vi erbjuder responsiv */
+/* Vi erbjuder responsiv  */
+
 
 @media (max-width: 768px) {
   .content-container {
-    flex-direction: column; /* Ändra riktningen till kolumn för mindre skärmar */
-  }
-
-  .Erbjuder-rubrik,
-  .erbjuder-text,
-  .EME {
-    flex: 1; /* Fyll hela bredden på mindre skärmar */
-    margin: 0; /* Återställ marginalerna för mindre skärmar */
-  }
-
-  .erbjuder-text h2,
-  .EME {
-    margin-top: 1rem; 
-    margin-right: 1rem; 
-    margin-left: 1rem; 
-    margin-bottom: 1rem; 
-  }
-
-  
-  nav {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    height: auto;
+    width: 100%;
+
+  }
+  .Erbjuder-rubrik {
+    display: none; 
   }
 
-  nav a {
-    padding: 10px;
+  .erbjuder-text {
     text-align: center;
+    margin: 0; 
+    padding: 0; 
   }
 
-  
-  .Erbjuder-rubrik video {
-    height: 150%; 
-  }
-}
-
+   }
 
 /* Footer stilar */
 
@@ -329,6 +339,14 @@ justify-content: left;
         transition: all 0.4s ease-out;
     }
 
+      /* footer responsiv */
+      @media (max-width: 768px) {
+        .footer-heading.footer-3 {
+          display: none; 
+        }
+      }
+
+
     /* Introtexter */
 
     .page-intro-text {
@@ -407,6 +425,27 @@ h1 {
 p {
   margin: 0;
 }
+
+
+/* Om oss responsiv */
+
+@media (max-width: 768px) {
+  .container-about-us {
+    flex-direction: column; 
+  }
+
+  .container-about-us-img {
+    width: 100%; 
+  }
+
+  .container-about-us-content-even,
+  .container-about-us-content-odd {
+    text-align: center; 
+  }
+}
+
+
+
 /* kontakta oss */
 .page-intro-text-contact-us {
   display: flex;
@@ -675,6 +714,34 @@ transition: 0.5s linear;
   display: none;
 }
 
+
+
+/* Kontakta oss responsiv */
+
+@media (max-width: 768px) {
+  .contact-us-main .page-intro-text,
+  .contact-us-main .button-container,
+  .contact-us-main .team,
+  .contact-us-main .contact-us,
+  .contact-us-main .faq,
+  .contact-us-main .container-contact-info {
+    width: 100%; 
+  }
+
+  .button-container button {
+    width: 100%; 
+  }
+  .team .container-team {
+    display: flex;
+    flex-direction: column;
+  }
+  .team .person,
+  .faq .faq-container,
+  .container-contact-info .contact-info-number-email,
+  .container-contact-info .location-info {
+    margin: 20px 0; 
+  }
+}
 
  /* Prislista */
 
