@@ -296,7 +296,7 @@ justify-content: left;
 
      #footer-email {
         width: 250px;
-        height: 40px;
+        height: 20px;
         border-radius: 4px;
         outline: none;
         border: none;
@@ -312,7 +312,7 @@ justify-content: left;
     }
    
      #footer-email::placeholder {
-        color:#b1b1b1
+        color:#b1b1b1;
      }
       #footer-email-btn {
         width: 150px;
