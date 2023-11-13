@@ -313,12 +313,15 @@ justify-content: left;
       text-align: center;
       margin: 10px;
       margin-bottom: 0;
+      margin-top: 0;
     }
 
     /* Om 0ss */
 .container-about-us {
   display: flex;
   margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   
 }
 
@@ -366,6 +369,21 @@ h1 {
 
 p {
   margin: 0;
+}
+/* kontakta oss */
+.page-intro-text-contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b1b1b1;
+  padding:20px;
+  margin-bottom: 0px;
+}
+
+.page-intro-text-contact-us h1 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* kontakta oss boka-knapp */
@@ -608,7 +626,7 @@ transition: 0.5s linear;
 }
 
 .faq-box:hover {
-  background-color: #272525;
+  background-color: #524650;
   color: white;
 }
 
@@ -624,16 +642,10 @@ transition: 0.5s linear;
  /* Prislista */
 
 
- .flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
 .image-topp-pricelist {
   position: relative;
+  display: flex;
+  overflow: hidden;
 }
 
 .image-topp-pricelist img {
@@ -651,6 +663,8 @@ transition: 0.5s linear;
   height: 100%;
   margin: 0;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .table-price-list {
@@ -660,6 +674,8 @@ transition: 0.5s linear;
   padding: 0;
   table-layout: fixed;
   height: 100%;
+  margin-top:0;
+  margin-bottom: 0;
 }
 
 .table-price-list th, .table-price-list td {
@@ -668,7 +684,7 @@ transition: 0.5s linear;
 }
 
 .table-price-list th {
-  background-color: #333;
+  background-color: #524650;
   color: white;
 }
 
@@ -686,26 +702,7 @@ transition: 0.5s linear;
 
 
 
-.page-intro-text-contact-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #b1b1b1;
-  padding:20px;
-  margin-bottom: 0px;
-}
 
-.page-intro-text-contact-us h1 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.page-intro-text-contact-us {
-  text-align: center;
-  margin: 10px;
-  margin-bottom: 20px;
-}
 
 
 
