@@ -26,24 +26,21 @@ header {
 .logo {
   max-width: 100%;
   height: auto;
-  display:flex;
+  display: flex;
   align-items: center;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 4rem;
-
-   /* sökruta  */
 }
 
 .nav-serch-container {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
   background-color: #1b1a1a;
   height: 4rem;
   margin-bottom: 2rem;
-
 }
 
 .navbox {
@@ -111,30 +108,28 @@ nav a:hover {
 
 /* Header responsiv  */
 @media (max-width: 768px) {
-  .header-container {
+  .header {
     height: auto;
     flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
   }
-  .nav-serch-container {
-  flex-direction: column;
 
-    
-  }
-  .header {
-    height: auto ;
+  .nav-serch-container {
+    flex-direction: column;
   }
 
   .nav a {
     padding: 10px;
   }
+
   .logo {
-    display: none ;
+    display: flex;
   }
-.nav {
-  margin-bottom: 4rem;
-}
+
+  .nav {
+    margin-bottom: 4rem;
+  }
 }
  
 /* Bildspel */
@@ -160,7 +155,8 @@ img {
 
 .content-container {
   display: flex;
-  padding: 0 ;
+  flex-wrap: wrap; 
+  padding: 0;
   margin: 0;
   margin-top: 0;
 }
@@ -183,22 +179,47 @@ img {
 .erbjuder-text {
   flex: 1;
   padding: 20px;
-  background-color:#b1b1b1;
+  background-color: #b1b1b1;
   color: black;
+  box-sizing: border-box; 
 }
+
 .erbjuder-text h2 {
   text-align: left;
-  margin-top: 4rem;
-  margin-right: 4rem;
-  margin-left: 4rem;
-  margin-bottom:1rem;
- 
+  margin-top: 2rem; 
+  margin-right: 2rem; 
+  margin-left: 2rem; 
+  margin-bottom: 1rem;
 }
+
 .EME {
   text-align: left;
-  margin-right: 4rem;
-  margin-left: 4rem;
-  margin-bottom: 4rem;
+  margin-right: 2rem; 
+  margin-left: 2rem; 
+  margin-bottom: 2rem; 
+}
+
+/* Vi erbjuder responsiv */
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .Erbjuder-rubrik,
+  .erbjuder-text,
+  .EME {
+    flex: 1; 
+    margin: 0; 
+  }
+
+  .erbjuder-text h2,
+  .EME {
+    margin-top: 1rem; 
+    margin-right: 1rem;
+    margin-left: 1rem; 
+    margin-bottom: 1rem; 
+  }
 }
 
 
