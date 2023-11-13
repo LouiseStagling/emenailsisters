@@ -203,22 +203,38 @@ img {
 
 @media (max-width: 768px) {
   .content-container {
-    flex-direction: column;
+    flex-direction: column; /* Ändra riktningen till kolumn för mindre skärmar */
   }
 
   .Erbjuder-rubrik,
   .erbjuder-text,
   .EME {
-    flex: 1; 
-    margin: 0; 
+    flex: 1; /* Fyll hela bredden på mindre skärmar */
+    margin: 0; /* Återställ marginalerna för mindre skärmar */
   }
 
   .erbjuder-text h2,
   .EME {
     margin-top: 1rem; 
-    margin-right: 1rem;
+    margin-right: 1rem; 
     margin-left: 1rem; 
     margin-bottom: 1rem; 
+  }
+
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  
+  .Erbjuder-rubrik video {
+    height: 150%; 
   }
 }
 
