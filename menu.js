@@ -12,6 +12,7 @@ function buildMenu() {
         ["Start", "index.html"],
         ["Om oss", "omoss.html"],
         ["Prislista", "prislista.html"],
+        ["Recensioner", "recensioner.html"],
         ["Inspo", "inspo.html"],
         ["Kontakt", "kontakt.html"],
         ["Boka", "https://www.bokadirekt.se/"]

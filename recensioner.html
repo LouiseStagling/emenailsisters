@@ -44,56 +44,52 @@
       </div>
     </div>
   </header>
- 
-  <main class="main-start">
-    <div id="slideshow-container">
-      <span class="arrow arrow-left" onclick="plusSlides(-1)">&#10094;</span>
-      <a href="https://www.bokadirekt.se" target="_blank">
-        <img class="mySlides" src="erbjudandehalloween.png" alt="Halloweenerbjudande">
-      </a>
-      <a href="https://www.bokadirekt.se" target="_blank">
-        <img class="mySlides" src="erbjudandejul.png" alt="Julerbjudande">
-      </a>
-      <a href="https://www.bokadirekt.se" target="_blank">
-        <img class="mySlides" src="erbjudandefest.png" alt="Festerbjudande">
-      </a>
-      <a href="https://www.bokadirekt.se" target="_blank">
-        <img class="mySlides" src="erbjudandebrollopp.png" alt="Bröloppserbjudande">
-      </a>
-      <span class="arrow arrow-right" onclick="plusSlides(1)">&#10095;</span>
+
+  <main>
+    <div class="image-topp-pricelist">
+      <img src="gellackpensel.jpg" alt="Gellack och pensel">
     </div>
   </main>
-        
-       
-        <div class="content-container">
-          
-          <div class="Erbjuder-rubrik">
-            <video autoplay loop muted>
-              <source src="naglarinspo.mp4" type="video/mp4">
-            </video>
-            
-          </div>
-          <div class="erbjuder-text">
-
-            <h2>Vi erbjuder</h2>
-            <p class="EME"> Upptäck det bästa av två världar hos EME NAIL SISTERS, 
-              där vi erbjuder både trendig och klassisk nagelvård. Oavsett om du är ute efter 
-              det senaste modetrenden eller föredrar tidlös elegans, så har vi något för dig. 
-              Våra skickliga terapeuter skapar unika nageldesigner som matchar din personliga 
-              stil, så att varje besök blir en chans att uttrycka dig själv genom vackra naglar. 
-              Hos oss får du inte bara professionell nagelvård utan också en upplevelse där du 
-              känner dig väl omhändertagen. Välkommen till EME NAIL SISTERS, där vi förenar det 
-              moderna med det tidlösa för att skapa nagelkonst som berättar din unika historia.
-              Boka din tid idag!
-                </p>
-
-          </div>
+ 
+  <aside class="reviews-intro-container">
+    <div class="page-intro-text">
+        <h1>Recensioner</h1>
+        <p>
+            Vi värdesätter din åsikt! Din feedback är nyckeln till vår förbättring. Dela din upplevelse
+            med oss och hjälp oss skapa den bästa möjliga tjänsten för dig. <br> Tack för att du är en viktig
+            del av vår gemenskap.
+        </p>
+    </div>
+</aside>
+  
+  
+  <section class="reviews-container">
+    <div class="reviews-rating-container">
+        <div class="header-reviews">
+            <h2>Lämna ditt omdömme</h2>
         </div>
+        <div class="form-container">
+            <div class="form">
+                <div id="rating-container">
+                    <span class="star" onclick="rate(1)">★</span>
+                    <span class="star" onclick="rate(2)">★</span>
+                    <span class="star" onclick="rate(3)">★</span>
+                    <span class="star" onclick="rate(4)">★</span>
+                    <span class="star" onclick="rate(5)">★</span>
+                </div>
+                <textarea id="comment" placeholder="Skriv ditt omdöme här"></textarea>
+                <button onclick="submitReview()">Publicera</button>
+            </div>
+        </div>
+        <div id="reviews-container">
+        </div>
+    </div>
+</section>
+
   
     <footer>
     <div class="footer-container">
       <div class="footer">
-        
         <div class="footer-heading footer-1 ">
           <h2>Om oss</h2>
           <a href="recensioner.html"> Recensioner</a>
@@ -129,8 +125,9 @@
   </footer>
  
   <script src="menu.js"></script>
+  <script src="omdommen.js"></script>
         
-          <script src="bildspel.js"></script>
+          <script src="script.js"></script>
            
 </body>
 </html>
