@@ -22,6 +22,7 @@
 h1, h2, h3 {
   text-transform: uppercase;
   margin-bottom: 1.4rem;
+  line-height: 1.4rem;
 }
 
 
@@ -330,7 +331,7 @@ text-transform: uppercase;
 
      #footer-email {
         width: 250px;
-        height: 20px;
+        height: 30px;
         border-radius: 4px;
         outline: none;
         border: none;
@@ -349,9 +350,9 @@ text-transform: uppercase;
         color:#b1b1b1;
      }
       #footer-email-btn {
-        width: 150px;
-        height: 40px;
-        border-radius: 4px;
+        width: 155px;
+        height: 50px;
+        border-radius: 5px;
         background-color:#524650;
         outline: none;
         border: none;
