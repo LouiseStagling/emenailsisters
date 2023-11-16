@@ -505,6 +505,10 @@ p {
   .container-about-us-content-odd {
     text-align: center; 
   }
+  .container-about-us h1 {
+    line-height: 1.4rem;
+    
+  }
 }
 
 
