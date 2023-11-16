@@ -494,13 +494,18 @@ p {
     width: 100%; 
   }
 
-  .container-about-us-content-even,
-  .container-about-us-content-odd {
-    text-align: center; 
-  }
   .container-about-us h1 {
     line-height: 1.4rem;
-    
+    margin-bottom: 10px; 
+  }
+
+  .container-about-us p {
+    margin-bottom: 10px; 
+  }
+
+  
+  .container-about-us h1 {
+    display: inline-block; 
   }
 }
 
