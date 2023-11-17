@@ -45,5 +45,8 @@ grid-row: span 2;
     --num-cols: 2;
     --row-height: 200px
   }
+  .page-intro-text h1 {
+    line-height: 1.4; 
+  }
   
  }
