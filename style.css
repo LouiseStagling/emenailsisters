@@ -511,18 +511,22 @@ p {
     width: 100%; 
   }
 
+  .container-about-us h1 {
+    margin-bottom: 10px; 
+    
+  }
+
   .page-intro-text h1 {
     line-height: 1.4; 
   }
-
 
   .container-about-us p {
     margin-bottom: 10px; 
   }
 
-}
   
-
+  
+}
 
 /* kontakta oss */
 .page-intro-text-contact-us {
@@ -823,45 +827,51 @@ transition: 0.5s linear;
   .contact-us-main .contact-us,
   .contact-us-main,
   .contact-us-main .container-contact-info {
-    width: 100%; 
+    width: 100%;
   }
 
   .button-container button {
-    width: 50%; 
+    width: 50%;
   }
+
   .team .container-team {
     display: flex;
     flex-direction: column;
   }
+
   .team .person,
   .faq .faq-container,
   .container-contact-info .contact-info-number-email,
   .container-contact-info .location-info {
-    margin: 20px 0; 
+    margin: 20px 0;
   }
 
-   
-    .page-intro-text {
-      display: flex;
-      font-size: 16px;
-      padding: 20px;
-    
+  .page-intro-text {
+    display: flex;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
   }
 
-  .page-intro-text-contact-us p {
-    word-wrap: break-word;
+  .contact-us-main .page-intro-text h1 {
+    font-size: 24px;
+  }
+
+  .contact-us-main .page-intro-text p {
+    font-size: 16px;
+    margin: 10px 0;
   }
 
   .person-image img,
   .map {
     width: 100%;
-    margin: 0; 
+    margin: 0;
   }
 
   .map {
     width: 100%;
-    margin: 0; 
-    margin-top:20px
+    margin: 0;
+    margin-top: 20px;
   }
 }
 
@@ -928,7 +938,7 @@ transition: 0.5s linear;
 
 
 
- /* Recensioner */
+ /* Recentioner */
 
  .reviews-intro-container {
   width: 100%;
@@ -1018,25 +1028,21 @@ button {
   text-align: center;
 }
 
+.image-topp-pricelist img {
+  width: 100%;
+  height: auto;
+}
 
-/* Recensioner responsiv*/
+ /* Recentioner responsiv */
 
-@media (max-width: 768px) {
-  main {
-    margin-top: 10px;
-  }
-
-  .image-topp-pricelist img {
+ @media screen and (max-width: 480px) {
+  .reviews-container {
+    flex-direction: column;
     width: 100%;
-    height: auto;
   }
 
-  .reviews-intro-container {
-    padding: 20px;
-  }
-
-  .page-intro-text {
-    text-align: center;
+  .header-reviews h2 {
+    line-height: 1.4
   }
 
   #rating-container {
@@ -1046,12 +1052,8 @@ button {
   form textarea {
     width: 100%;
   }
-  .header-reviews h2 {
-    line-height: 1.4;
-  }
 
-
-}
+ }
 
 
 
