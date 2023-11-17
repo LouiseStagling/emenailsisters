@@ -860,6 +860,7 @@ transition: 0.5s linear;
   .contact-us-main .page-intro-text p {
     font-size: 16px;
     margin: 10px 0;
+    padding:20px
   }
 
   .person-image img,
@@ -981,6 +982,7 @@ transition: 0.5s linear;
 .header-reviews {
   margin-bottom: 20px;
   margin-top: 20px;
+  line-height: 1.4;
 }
 
 
@@ -1039,21 +1041,16 @@ button {
   .reviews-container {
     flex-direction: column;
     width: 100%;
-  }
-
-  .header-reviews h2 {
-    line-height: 1.4
+    line-height: 1.4;
   }
 
   #rating-container {
     margin-top: 10px;
   }
 
-  form textarea {
+  .form textarea {
     width: 100%;
   }
-
- }
-
+}
 
 
